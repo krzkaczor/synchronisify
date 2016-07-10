@@ -1,6 +1,9 @@
 Synchronisify
 =============
 Turns asynchronous constructor into synchronous one.
+```
+npm install synchronisify
+```
 
 Why?
 ----
