@@ -1,0 +1,25 @@
+{
+  "name": "synchronisify",
+  "version": "0.9.0",
+  "description": "Turns asynchronous constructor into synchronous one",
+  "main": "lib/lib.js",
+  "scripts": {
+    "test": "standard && mocha"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
+  },
+  "keywords": [
+    "asynchronous",
+    "constructor"
+  ],
+  "author": "Krzysztof Kaczor",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "2.5.3",
+    "standard": "7.1.2"
+  }
+}
