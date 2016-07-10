@@ -32,6 +32,8 @@ Example
 const synchronisify = require('../lib/lib')
 
 const delay = (t = 1000) => new Promise(resolve => setTimeout(resolve, t))
+
+@synchronisify //yay, it support es7 decorators. If you don't use es7 just wrap your class like this: synchronisify(ApiClient)
 class ApiClient {
   constructor (login, pass) {
     this.login = login
@@ -48,8 +50,6 @@ class ApiClient {
     // do something
   }
 }
-
-synchronisify(ApiClient) // by default _init is the name of promise that indicates initialization
 
 const client = new ApiClient('login', 'pass') // constructor itself is synchroneus
 client.action() // action method code will run after init is done
