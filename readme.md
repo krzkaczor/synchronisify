@@ -23,6 +23,8 @@ There are also different options like static method, read [this](http://stackove
 
 Example
 -------
+`synchronisify` helps programmers to build clean public interface.
+
 ```
 const synchronisify = require('../lib/lib')
 
@@ -53,3 +55,7 @@ client.action() // action method code will run after init is done
 How?
 ----
 Each method in prototype is wrapped in `initPromise.then(method)`. Drawback is that each method becames async i.e. it returns promise.
+
+Docs
+---
+`function synchronisify (asyncClass, initPromiseName = '_init')`
